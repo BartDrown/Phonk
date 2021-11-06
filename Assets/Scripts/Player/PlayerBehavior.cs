@@ -73,11 +73,11 @@ public class PlayerBehavior : MonoBehaviour
                         return;
                     }
                     this.spriteRenderer.sprite = this.sprites[5];
+                    trailRenderer.emitting = true;
+
                     return;
                 }
                 this.spriteRenderer.sprite = this.sprites[4];
-                trailRenderer.emitting = true;
-                
             }else {
                 this.spriteRenderer.sprite = this.sprites[0];
                 trailRenderer.emitting = false;
