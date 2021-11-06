@@ -22,11 +22,7 @@ public class MapManager : MonoBehaviour
 
         TilemapBehavior tilemapBehavior = tilemapObject.GetComponent<TilemapBehavior>();
         Vector2 tilemapSize = tilemapBehavior.getSize();
-
-        Debug.Log(tilemapSize.y / 2);
         
-        // tilemapObject.transform.position = new Vector3(0, 0 + tilemapSize.y , 10);
-
         this.currentHeight += (int) tilemapSize.y; 
 
         tilemapNotVisible();
@@ -52,10 +48,6 @@ public class MapManager : MonoBehaviour
         tilemapObject.transform.position = new Vector3(0, this.currentHeight, 10);
 
         this.currentHeight += (int) tilemapSize.y; 
-
-        Debug.Log("Moved tilemap");
-        
-        Debug.Log(tilemapObject.transform.position);
     }
 
 }
