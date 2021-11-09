@@ -18,7 +18,10 @@ public class PickableSpawner : MonoBehaviour
     float spawnTime;
 
     [SerializeField]
-    List<GameObject> pickables;
+    List<GameObject> instruments;
+
+    [SerializeField]
+    List<GameObject> lengths;
 
     void Update()
     {
@@ -33,13 +36,24 @@ public class PickableSpawner : MonoBehaviour
     }
 
     void SpawnObject(){
+
+        if(Random.Range(0,2) == 0){
         Instantiate(
-            pickables[Random.Range(0, pickables.Count)],
+            instruments[Random.Range(0, instruments.Count)],
             new Vector3(
                 (int) Random.Range( Random.Range(-width, -width/2),  Random.Range(width/2, width)),
                 this.transform.position.y + offset.y,
                 0),
             Quaternion.identity);
+        }else{
+        Instantiate(
+            lengths[Random.Range(0, lengths.Count)],
+            new Vector3(
+                (int) Random.Range( Random.Range(-width, -width/2),  Random.Range(width/2, width)),
+                this.transform.position.y + offset.y,
+                0),
+            Quaternion.identity);
+        }
     }
 
     private void OnDrawGizmos() {

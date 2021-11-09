@@ -25,15 +25,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281873367215287258, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1281873367215287258, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1281873367215287258, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419780391516083202, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419780391516083202, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
+      propertyPath: thing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1615132008832606116, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
       propertyPath: m_Sprite
@@ -89,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769286335418484672, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
       propertyPath: m_Name
-      value: PickableBass
+      value: PickableBass Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19ad172f982ff340b9bd1625ef70495, type: 3}
